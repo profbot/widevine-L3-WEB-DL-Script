@@ -34,7 +34,7 @@ os.system(f'mp4decrypt.exe {keys} encrypted.m4a decrypted.m4a')
 os.system(f'mp4decrypt.exe {keys} encrypted.mp4 decrypted.mp4')
 
 print("Merging .....")
-os.system(f'mkvmerge.exe -o {filename}.mkv decrypted.mp4 decrypted.m4a')
+os.system(f'mkvmerge -o {filename}.mkv decrypted.mp4 decrypted.m4a')
 print("\nAll Done .....")
 
 print("\nDo you want to delete the Encrypted Files : Press 1 for yes , 2 for no")
